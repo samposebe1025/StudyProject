@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name = "colorPrimary">#FF03DAC5</color>
+    <color name = "colorPrimaryDark">#FF000000</color>
+    <color name ="colorAccent">#FFFFFFFF</color>
+
+    <color name="color_background">#FF191926</color>
+
+    <color name="white_0.50">#7FFFFFFF</color>
+    <color name="white_0.75">#BFFFFFFF</color>
+
+    <color name="reviews_gray">#FF6D6D80</color>
+    <color name="actors_name_gray">#FFD8D8D8</color>
+    <color name="name_gray">#FFECECEC</color>
+    <color name="shadow_gray">#7F000000</color>
+
+    <color name="tag_color">#FFFF3466</color>
+
 </resources>
