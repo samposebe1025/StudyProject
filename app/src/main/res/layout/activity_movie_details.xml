@@ -278,71 +278,98 @@
             app:layout_constraintGuide_begin="222dp"
             tools:visibility="invisible" />
 
-        <ImageView
-            android:id="@+id/imageView8"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card0"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="1:1"
 
-            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintEnd_toStartOf="@+id/card1"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@id/guideline1"
-            app:layout_constraintTop_toBottomOf="@+id/textCastHeading"
-            app:srcCompat="@drawable/downey"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintTop_toBottomOf="@+id/textCastHeading">
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
 
-        <ImageView
-            android:id="@+id/imageView9"
+                app:srcCompat="@drawable/downey"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
+            app:cardCornerRadius="4dp"
             app:layout_constraintDimensionRatio="1:1"
 
-            app:layout_constraintEnd_toStartOf="@+id/imageView10"
+            app:layout_constraintStart_toEndOf="@+id/card0"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView8"
-            app:layout_constraintTop_toBottomOf="@+id/textCastHeading"
-            app:srcCompat="@drawable/evans"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintEnd_toStartOf ="@+id/card2"
+            app:layout_constraintTop_toBottomOf="@+id/textCastHeading">
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
 
-        <ImageView
-            android:id="@+id/imageView10"
+                app:srcCompat="@drawable/evans"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
+            app:cardCornerRadius="4dp"
             app:layout_constraintDimensionRatio="1:1"
 
-            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/card1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toBottomOf="@+id/textCastHeading"
-            app:srcCompat="@drawable/ruffalo"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintEnd_toStartOf ="@+id/card3"
+            app:layout_constraintTop_toBottomOf="@+id/textCastHeading">
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
 
-        <ImageView
-            android:id="@+id/imageView11"
+                app:srcCompat="@drawable/ruffalo"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintDimensionRatio="1:1"
 
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toBottomOf="@+id/textCastHeading"
+            app:layout_constraintStart_toEndOf="@+id/card2"
+            app:layout_constraintTop_toBottomOf="@+id/textCastHeading">
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
 
+                app:srcCompat="@drawable/hemsworth"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
 
-            android:background="@drawable/round_rectangle"
-            android:outlineProvider="background"
-            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView"
@@ -351,9 +378,9 @@
             android:layout_marginTop="6dp"
             android:text="@string/actor_0"
             android:textColor="@color/actors_name_gray"
-            app:layout_constraintEnd_toEndOf="@+id/imageView8"
-            app:layout_constraintStart_toStartOf="@+id/guideline1"
-            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+            app:layout_constraintEnd_toEndOf="@+id/card0"
+            app:layout_constraintStart_toStartOf="@+id/card0"
+            app:layout_constraintTop_toBottomOf="@+id/card0" />
 
         <TextView
             android:id="@+id/textView2"
@@ -362,9 +389,9 @@
             android:layout_marginTop="6dp"
             android:text="@string/actor_1"
             android:textColor="@color/actors_name_gray"
-            app:layout_constraintEnd_toEndOf="@+id/imageView9"
-            app:layout_constraintStart_toStartOf="@+id/imageView9"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            app:layout_constraintEnd_toEndOf="@+id/card1"
+            app:layout_constraintStart_toStartOf="@+id/card1"
+            app:layout_constraintTop_toBottomOf="@+id/card1" />
 
         <TextView
             android:id="@+id/textView3"
@@ -373,9 +400,9 @@
             android:layout_marginTop="6dp"
             android:text="@string/actor_2"
             android:textColor="@color/actors_name_gray"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
-            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+            app:layout_constraintEnd_toEndOf="@+id/card2"
+            app:layout_constraintStart_toStartOf="@+id/card2"
+            app:layout_constraintTop_toBottomOf="@+id/card2" />
 
         <TextView
             android:id="@+id/textView4"
@@ -384,9 +411,9 @@
             android:layout_marginTop="6dp"
             android:text="@string/actor_3"
             android:textColor="@color/actors_name_gray"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
-            app:layout_constraintStart_toStartOf="@+id/imageView11"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            app:layout_constraintEnd_toEndOf="@+id/card3"
+            app:layout_constraintStart_toStartOf="@+id/card3"
+            app:layout_constraintTop_toBottomOf="@+id/card3" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
