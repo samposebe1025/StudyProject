@@ -4,6 +4,7 @@
     <string name="top_back_button">Back</string>
 
     <string name="pg">13+</string>
+
     <string name="movie_name">"Avengers:\nEnd Game"</string>
     <string name="tag_text">Action, Adventure, Fantasy</string>
     <string name="reviews_text">125 Reviews</string>
@@ -17,5 +18,11 @@
     <string name="actor_3">Chris Hemsworth</string>
     <string name="todo">TODO</string>
 
+
+    <string name="mov_list">Movies list</string>
+
+    <string name="movie_name_view">"Avengers: End Game"</string>
+    <string name="reviews_text_view">125 REVIEWS</string>
+    <string name="video_duration">137 MIN</string>
 
 </resources>

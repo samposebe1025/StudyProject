@@ -24,20 +24,22 @@
             app:srcCompat="@drawable/orign"
             tools:ignore="ContentDescription" />
 
+
         <ImageView
             android:id="@+id/imageMask"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/ic_mask_from_svg"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="@+id/imageBanner"
             app:layout_constraintEnd_toEndOf="@+id/imageBanner"
+            app:layout_constraintHorizontal_bias="0.0"
+
             app:layout_constraintStart_toStartOf="@+id/imageBanner"
             app:layout_constraintTop_toTopOf="@+id/imageBanner"
-
-            android:background="@drawable/ic_mask_from_svg"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/mask_png"
             tools:ignore="ContentDescription" />
-
 
         <ImageView
             android:id="@+id/imageStar0"
@@ -418,4 +420,4 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+</ScrollView>

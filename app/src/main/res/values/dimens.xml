@@ -4,9 +4,26 @@
     <dimen name="shadow_y">6</dimen>
     <dimen name="shadow_radius">12</dimen>
 
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+
+    <dimen name="star_wh_one_movi">@dimen/dp_8</dimen>
+    <dimen name="star_beet_one_movi">@dimen/dp_2</dimen>
+    <dimen name="star_top_one_movi">@dimen/dp_4</dimen>
+
 
     <dimen name="space_right_left">16dp</dimen>
 
+
+
+
+
+    <dimen name="text_size_8">8sp</dimen>
     <dimen name="text_size_12">12sp</dimen>
     <dimen name="text_size_14">14sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
