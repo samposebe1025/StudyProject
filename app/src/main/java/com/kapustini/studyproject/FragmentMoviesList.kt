@@ -1,7 +1,9 @@
 package com.kapustini.studyproject
 
+import android.content.Context
 import android.graphics.Rect
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,10 +28,18 @@ class FragmentMoviesList: Fragment() {
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(R.layout.fragment_movies_list, container, false)
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        Log.e("TAG", "onActivityCreated")
+        listener = activity as TransactionsFragmentClicks
+    }
+
    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
        super.onViewCreated(view, savedInstanceState)
        recycler = view.findViewById(R.id.rv_movies)
-       adapterMovie = MovieAdaptor(clickListener)
+       adapterMovie = MovieAdaptor {
+           listener?.openMovieDetails(it.movieID)
+       }
        recycler?.layoutManager = GridLayoutManager(requireContext(), 2)
        recycler?.adapter = adapterMovie
 

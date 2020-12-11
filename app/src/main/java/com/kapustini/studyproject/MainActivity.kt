@@ -9,7 +9,7 @@ import com.google.android.material.snackbar.Snackbar
 class MainActivity : AppCompatActivity(), FragmentMoviesList.TransactionsFragmentClicks, FragmentMoviesDetails.ClickListener {
 
 
-    private val fragmentList = FragmentMoviesList().apply { setClickListener(this@MainActivity)}
+    private val fragmentList = FragmentMoviesList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
